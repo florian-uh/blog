@@ -5,7 +5,7 @@ import Projets from "./components/Projets";
 import Articles from "./components/Articles";
 import Aside from "./components/Aside";
 import Footer from "./components/Footer";
-import "./index.css";
+import "./styles/global.css";
 
 export default function App() {
     const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -28,9 +28,8 @@ export default function App() {
                 <Competences />
                 <Projets />
                 <Articles />
+                <Aside />
             </main>
-
-            <Aside />
             <Footer />
         </>
     );

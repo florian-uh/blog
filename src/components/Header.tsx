@@ -23,8 +23,8 @@ export default function Header({ darkMode, toggleDark }: HeaderProps) {
 
             <nav id="navbar" aria-label="Navigation principale">
                 <ul>
-                    <li><a href="#competences">Compétences</a></li>
-                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#competences">Front end mentor</a></li>
+                    <li><a href="#projets">Odin's project</a></li>
                     <li><a href="#articles">Articles</a></li>
                     <li><a href="#ressources">Ressources</a></li>
                 </ul>

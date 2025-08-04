@@ -1,4 +1,4 @@
-## Flexbox
+# Flexbox
 
 Flexbox est une methode de mise en page partant d'un axe principal
 permettant de disposer des elements en ligne ou en colonne.
