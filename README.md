@@ -1,11 +1,26 @@
-# React + TypeScript + Vite
+# Blog Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal blog built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Environment Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project uses environment variables for configuration. To set up your local environment:
+
+1. Copy the `.env.example` file to a new file named `.env`:
+   ```
+   cp .env.example .env
+   ```
+
+2. Replace the placeholder values in the `.env` file with your actual Firebase configuration:
+   ```
+   VITE_FIREBASE_API_KEY="your-actual-api-key"
+   VITE_FIREBASE_AUTH_DOMAIN="your-actual-auth-domain"
+   ...
+   ```
+
+3. **IMPORTANT**: Never commit your `.env` file to version control. It contains sensitive API keys and credentials.
+
+## Development
 
 ## Expanding the ESLint configuration
 

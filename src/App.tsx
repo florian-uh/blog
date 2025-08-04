@@ -1,14 +1,38 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import ArticlePage from "./pages/ArticlePage";
+import { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Competences from "./components/Competences";
+import Projets from "./components/Projets";
+import Articles from "./components/Articles";
+import Aside from "./components/Aside";
+import Footer from "./components/Footer";
+import "./index.css";
 
 export default function App() {
+    const [darkMode, setDarkMode] = useState<boolean>(false);
+
+    useEffect(() => {
+        const saved = localStorage.getItem("darkMode") === "true";
+        setDarkMode(saved);
+    }, []);
+
+    useEffect(() => {
+        document.body.classList.toggle("dark-mode", darkMode);
+        localStorage.setItem("darkMode", darkMode.toString());
+    }, [darkMode]);
+
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/article/:slug" element={<ArticlePage />} />
-            </Routes>
-        </BrowserRouter>
+        <>
+            <Header darkMode={darkMode} toggleDark={() => setDarkMode(!darkMode)} />
+
+            <main>
+                <Competences />
+                <Projets />
+                <Articles />
+            </main>
+
+            <Aside />
+            <Footer />
+        </>
     );
 }
+
