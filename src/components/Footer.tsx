@@ -1,9 +1,12 @@
 export default function Footer() {
+    const currentYear = new Date().getFullYear();
     return (
-        <footer>
-            <p>© {new Date().getFullYear()} Flo-uh — Tous droits réservés</p>
+        <footer role="contentinfo" aria-label="Informations sur le site">
             <p>
-                Développé avec ❤️ et React + TypeScript
+                <span aria-label={`Copyright ${currentYear} Flo-uh`}>© {currentYear} Flo-uh</span> — Tous droits réservés
+            </p>
+            <p>
+                Développé avec <span aria-label="amour" role="img">❤️</span> et React + TypeScript
             </p>
         </footer>
     );

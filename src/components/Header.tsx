@@ -23,10 +23,10 @@ export default function Header({ darkMode, toggleDark }: HeaderProps) {
 
             <nav id="navbar" aria-label="Navigation principale">
                 <ul>
-                    <li><a href="#competences">Front end mentor</a></li>
-                    <li><a href="#projets">Odin's project</a></li>
-                    <li><a href="#articles">Articles</a></li>
-                    <li><a href="#ressources">Ressources</a></li>
+                    <li><a href="#competences" aria-label="Aller à la section compétences">Compétences</a></li>
+                    <li><a href="#projets" aria-label="Aller à la section projets">Projets</a></li>
+                    <li><a href="#articles" aria-label="Aller à la section articles">Articles</a></li>
+                    <li><a href="#ressources" aria-label="Aller à la section ressources">Ressources</a></li>
                 </ul>
             </nav>
         </header>

@@ -1,10 +1,10 @@
 export default function Competences() {
     return (
-        <section id="competences">
+        <section id="competences" aria-labelledby="competences-techniques-title">
             <div className="block-competence1">
                 <div className="partie1">
-                    <h2>Mes compétences techniques :</h2>
-                    <ul>
+                    <h2 id="competences-techniques-title">Mes compétences techniques :</h2>
+                    <ul aria-label="Liste des compétences techniques">
                         <li><strong>HTML5</strong> — structure sémantique, accessibilité</li>
                         <li><strong>CSS3</strong> — flexbox, grid, responsive, animations</li>
                         <li><strong>JavaScript</strong> — DOM, ES6+, fetch API, modules</li>
@@ -14,8 +14,8 @@ export default function Competences() {
                 </div>
 
                 <div className="partie2">
-                    <h2>Si besoin :</h2>
-                    <ul>
+                    <h2 id="services-title">Si besoin :</h2>
+                    <ul aria-labelledby="services-title">
                         <li>Installation OS : Windows, Linux</li>
                         <li>Initiation bureautique : Word, PowerPoint</li>
                         <li>Recherche Web</li>

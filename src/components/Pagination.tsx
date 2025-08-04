@@ -15,6 +15,8 @@ export default function Pagination({ currentPage, totalPages, onPageChange }: Pa
                         <button
                             className={page === currentPage ? "active" : ""}
                             onClick={() => onPageChange(page)}
+                            aria-current={page === currentPage ? "page" : undefined}
+                            aria-label={`Page ${page}${page === currentPage ? ", page actuelle" : ""}`}
                         >
                             {page}
                         </button>

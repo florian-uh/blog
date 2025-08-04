@@ -1,6 +1,13 @@
 # Blog Project
 
-A personal blog built with React, TypeScript, and Vite.
+A personal blog built with React, TypeScript, and Vite. This project focuses on accessibility and is deployed using Firebase Hosting.
+
+## Features
+
+- Responsive design
+- Accessibility-focused components with ARIA attributes
+- Firebase integration for hosting and deployment
+- GitHub Actions workflows for CI/CD
 
 ## Environment Setup
 
@@ -21,6 +28,42 @@ This project uses environment variables for configuration. To set up your local 
 3. **IMPORTANT**: Never commit your `.env` file to version control. It contains sensitive API keys and credentials.
 
 ## Development
+
+To start the development server:
+
+```bash
+npm run dev
+```
+
+## Deployment
+
+This project is configured for deployment to Firebase Hosting. The deployment process is automated using GitHub Actions workflows.
+
+### Prerequisites
+
+1. Ensure all GitHub secrets are configured in your repository:
+   - `VITE_FIREBASE_API_KEY`
+   - `VITE_FIREBASE_AUTH_DOMAIN`
+   - `VITE_FIREBASE_PROJECT_ID`
+   - `VITE_FIREBASE_STORAGE_BUCKET`
+   - `VITE_FIREBASE_MESSAGING_SENDER_ID`
+   - `VITE_FIREBASE_APP_ID`
+   - `FIREBASE_SERVICE_ACCOUNT_BLOG_PROJECT_92404`
+
+### Automatic Deployment
+
+Push changes to the `main` branch to trigger automatic deployment via GitHub Actions.
+
+### Manual Testing Before Deployment
+
+To test the build locally before deploying:
+
+```bash
+npm run build
+firebase serve
+```
+
+For more detailed information about deployment and accessibility improvements, see [DEPLOYMENT_AND_ACCESSIBILITY.md](./DEPLOYMENT_AND_ACCESSIBILITY.md).
 
 ## Expanding the ESLint configuration
 

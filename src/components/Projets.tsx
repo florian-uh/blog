@@ -23,9 +23,9 @@ const projets = [
 
 export default function Projets() {
     return (
-        <section id="projets">
-            <h2>Quelques réalisations</h2>
-            <div className="cartes">
+        <section id="projets" aria-labelledby="projets-title">
+            <h2 id="projets-title">Quelques réalisations</h2>
+            <div className="cartes" aria-label="Liste des projets">
                 {projets.map((p, i) => (
                     <ProjetCard key={i} {...p} />
                 ))}

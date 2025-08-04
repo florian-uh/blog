@@ -50,8 +50,8 @@ export default function Articles() {
     const currentArticles = articles.slice(startIndex, startIndex + articlesPerPage);
 
     return (
-        <section id="articles">
-            <h2>Mes articles</h2>
+        <section id="articles" aria-labelledby="articles-title">
+            <h2 id="articles-title">Mes articles</h2>
             <div className="articles-list">
                 {currentArticles.map((article, i) => (
                     <ArticleCard key={i} {...article} />

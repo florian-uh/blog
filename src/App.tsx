@@ -24,7 +24,7 @@ export default function App() {
         <>
             <Header darkMode={darkMode} toggleDark={() => setDarkMode(!darkMode)} />
 
-            <main>
+            <main role="main" aria-label="Contenu principal">
                 <Competences />
                 <Projets />
                 <Articles />
