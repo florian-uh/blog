@@ -12,4 +12,3 @@ To complete the process:
 1. Commit these changes with a message like "Remove sensitive API keys from version control"
 2. Push the changes to GitHub
 
-Your Firebase API keys are now protected from being exposed in your GitHub repository.

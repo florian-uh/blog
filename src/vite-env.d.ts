@@ -1,5 +1,10 @@
 /// <reference types="vite/client" />
 
+declare module '*.css' {
+  const classes: { [className: string]: string };
+  export default classes;
+}
+
 // Add JSX namespace declaration
 declare namespace JSX {
   interface IntrinsicElements {
